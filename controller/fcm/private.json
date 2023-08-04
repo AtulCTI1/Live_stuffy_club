@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "examsimplifyapp",
+  "private_key_id": "813c763c6d0e80081ebe3f6a131bf18d1418515e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDA9RwDnWFh7HXg\nMjV4+mQGUJOFrV3pK6foH+gOx55Q3iDgXkN86wdc9HZigWygJm6qkm4GKlXQRKTi\nyjwhkGvQE682RjS5XzquydOnjVEpGreraovjCut63DRwZaqzOvvNkAIPqjdOGB4j\n3mrMIriYoz/+g4smr9WOcFCdgNswKFr0akgP4tsLVObJEZkjvz/TP5VaoJtbCvXY\nMuGf1ZWZgsd2m+4c+Rclovb0vckc/hXJ7gk48rlHjS8WueJibpns14pDsLNjVsiL\nWnNr/3rWiYrq26cpB6pHHLPy2mIU/KnrBh3oWQ8FflQ9cG6JeBrkMyEWVt2k7twv\nny6tC6RTAgMBAAECggEACxFEBRUO094LOMvIc2LxP8d5Xq5993TQkaja15Yth3fm\nLNhbSJv2dSd0btv7jggGSvRRKTteZq65QmTVJBuzg2DNqPBH7+X9aK8c27xoTlJA\n/K0EzwX+UbK1s0ixjMwySy0aYSmjOHB7shT8zS6kpeSfNAr5fUOSnTPl+9K7P7zH\nL1EK/P7FhyHhHSxKQJKz4zGqv7+ibhb+quF7ZOrx/SAqQ7sWKcgK0Jx9374zIGzf\nC3M7k+jQZVEyJoDKlr9lwa15APScR45LOtu7A88W5c0pUS471EixWsHO+IP5CP9L\ng/t36DB0CdE6BL6/5kpIdQBkct41efwUgppOnX8Z8QKBgQD3BOJ1gE3AobtgadCF\nk9stEHQrJM5hVWnbKjwQaPl+DtwUG/PdyolZo9SrYeu4va5GJ0Ai+23C7tEmTBoJ\nyjvwc2CITm2GJWdTh344QOc1sFBqXYLDtHLMyCi4hhoCZDP/aeJ4+DnFLBeiaITI\n7+/QiSUZJRMrjpEHngqe2u0WqQKBgQDH+QyrzrsARHSqDfrD0pEpCab7yV/v8chH\ntEmcrfL7I0KP8pIkSQY1MCETX1Rass5zeEzZsxthqxlfPCgL1uwBL7GHrwGTy0dT\nKExWcOS8Z81yqUzVZBCiJboLeaB2x5NxR2OIW6H2imIklmrjTG1Wuyig8+AsYzeX\nOrFsN1cMmwKBgQCx9evsuT3K7PngkPswcQAzbCo1NvQUfYOg6MGTFP3BypTVS/oa\nLKNdWEGMIyS+2LCoS/jR+w/toz48+BC+QtuB9K10JgST43iYXgIaJvAr5tVYe/wM\nYIFgdUeZAMvWMzie5zrI6hQ8r/JrCB+539qHA3cdsW8pLzHfKgX+wjyS2QKBgQCq\nzKVt+VzvlYiv1tDggPFLQ9tEI3O11aVi2TImiMyIhE1N9bmtFFIhC8K0cS/zZ9W9\n+nppVvmEKke5eAAcXK2nNb1ETs3iFjYNaNYK3tH/uglYbhIaESXD2MVXF8NesIfW\nsUrqJJnpobjB11fkXFrnQWQqVSKbxwKsQI1aCMppEQKBgFGRnzF4U+pfhOopGkq3\nd0eDNZE5Ckq/bw10p4LtYboLmpJxs2bFaW5dko+ybD3/eX6g05IExAXuO7xX/nmq\nBQw6CslHHF8iaxfNp3lY705eObS4vc+8kI4/4PifQmtxvAicWTWW7cQ0RijGg3U7\nTFpyQm+4AxlzkS6gClmMEh3t\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-9xry9@examsimplifyapp.iam.gserviceaccount.com",
+  "client_id": "103612884319366295735",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-9xry9%40examsimplifyapp.iam.gserviceaccount.com"
+}

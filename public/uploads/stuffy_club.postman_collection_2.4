@@ -1,0 +1,685 @@
+{
+	"info": {
+		"_postman_id": "6b673abf-2f14-4a1a-b531-932c36b630a6",
+		"name": "stuffy_club",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21775958"
+	},
+	"item": [
+		{
+			"name": "verifyUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"act_token\": \"57263546\",\r\n    \"token\": \"$2b$10$3zbkrz/pB7KLvrSy9dmZue4uTofDvfpiwkBV6CIYnXp...\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/verifyUser",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"verifyUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "guest63@mailinator.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Ezio@1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signupUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "full_name",
+							"value": "Test User-1",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "9787548785",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "guest65@mailinator.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test@1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/signUp",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "chnagePassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "Change@1234",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "Change@1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/changePassword",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "myprofile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/myprofile",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"myprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editProfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "full_name",
+							"value": "Test User-11",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "9787548785",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Ezio@1234",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/SSD500GB8DDR4/Downloads/logo (1).png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/editProfile",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"editProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_name",
+							"value": "Panda",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/SSD500GB8DDR4/Downloads/Downloads/Groups/unsplash_4wYxcWA5MbI.png",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/addCategory",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"addCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCategory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/getCategory",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"getCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": [
+								"/C:/Users/SSD500GB8DDR4/Downloads/trevor-vannoy-uLmx2zrxUkI-unsplash 2.png",
+								"/C:/Users/SSD500GB8DDR4/Downloads/anton-darius-WoRuw4l2Xyo-unsplash 1.png",
+								"/C:/Users/SSD500GB8DDR4/Downloads/preillumination-seth-1bbolKBmxL8-unsplash 1.png",
+								"/C:/Users/SSD500GB8DDR4/Downloads/trevor-vannoy-uLmx2zrxUkI-unsplash 1.png"
+							]
+						},
+						{
+							"key": "category_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "product_name",
+							"value": "Stuffy_animals",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "Description",
+							"value": "text_1",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "public",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/addProduct",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"addProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllproduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.23:4000/getProducts",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"getProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductsbyid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "47",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/getProductsbyid",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"getProductsbyid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductsbyuserid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/getProductsbyuserid",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"getProductsbyuserid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getproductBycategory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/getProductbycategory",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"getProductbycategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgotPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "guest63@mailinator.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/forgotPassword",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"forgotPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "homePage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "search",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/homePage",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"homePage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "termsAndcondition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.23:4000/termsandcondition",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"termsandcondition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "termsAndcondition_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.23:4000/termsandcondition_1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"termsandcondition_1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "privacyPolicy_1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.23:4000/privacyPolicy_1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"privacyPolicy_1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "privacyPolicy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.23:4000/privacyPolicy",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"privacyPolicy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plans",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.23:4000/plans",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"23"
+					],
+					"port": "4000",
+					"path": [
+						"plans"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
